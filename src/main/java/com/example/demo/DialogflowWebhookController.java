@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 @RestController
-@CrossOrigin(origins = "https://regrutacija.netlify.app")
+@CrossOrigin(origins = "https://sistem-za.netlify.app")
 public class DialogflowWebhookController {
 
     @PostMapping("/webhook")

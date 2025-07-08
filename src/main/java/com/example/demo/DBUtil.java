@@ -9,9 +9,10 @@ public class DBUtil {
     public static Connection open(){
 
 
-        String url = "jdbc:mysql://localhost:3306/sistem_za_regrutaciju";
+        String url = "jdbc:mysql://maglev.proxy.rlwy.net:12688/railway";
         String user = "root";
-        String password = "Scipio@1";
+        String password = "DSwdxGCQbTLPPNYyEmCbGJWrFNcnomrY";
+
         try {
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {

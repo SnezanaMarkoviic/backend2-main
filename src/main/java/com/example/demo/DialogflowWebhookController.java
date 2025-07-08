@@ -1,9 +1,6 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -30,4 +27,9 @@ public class DialogflowWebhookController {
 
         return response;
     }
+    @GetMapping("/webhook")
+    public String testWebhook() {
+        return "Webhook endpoint je aktivan. Koristi POST zahtev da šalješ podatke.";
+    }
+
 }
